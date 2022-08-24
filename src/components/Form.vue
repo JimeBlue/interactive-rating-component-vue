@@ -1,11 +1,17 @@
 vbase
 <template>
-  <section>
+  <section class="bg-[#252D37] p-5">
     <div>
-      <header class="">
-        <div>
-          <img src="../assets/images/icon-star.svg" alt="star" />
-        </div>
+      <header>
+        <span
+          class="bg-[#2D3743] w-14 h-14 rounded-full inline-flex justify-center items-center"
+        >
+          <img
+            src="../assets/images/icon-star.svg"
+            alt="star"
+            class="w-11 h-11"
+          />
+        </span>
         <h1 class="test">How did we do?</h1>
         <p class="text-red-600">
           Please let us know how we did with your support request. All feedback

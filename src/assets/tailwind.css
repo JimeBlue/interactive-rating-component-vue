@@ -6,6 +6,13 @@
 @tailwind components;
 
 
-.test {
-    color: pink;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
 }
