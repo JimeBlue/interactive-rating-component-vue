@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <h1>hello world</h1>
+    <Form></Form>
   </div>
 </template>
 
 <script>
+// Imports
+import Form from "./components/Form.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    Form,
+  },
 };
 </script>
 
-<style></style>
+<style src="./assets/tailwind.css"></style>

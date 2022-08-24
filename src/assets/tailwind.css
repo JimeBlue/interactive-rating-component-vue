@@ -1,0 +1,11 @@
+
+@tailwind utilities;
+
+@tailwind base;
+
+@tailwind components;
+
+
+.test {
+    color: pink;
+}
