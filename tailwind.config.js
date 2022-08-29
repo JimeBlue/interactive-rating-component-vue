@@ -9,6 +9,10 @@ module.exports = {
       colors: {
         "light-gray": "#959EAC",
       },
+      screens: {
+        chico: "427px",
+        medio: "558px",
+      },
     },
   },
   plugins: [],

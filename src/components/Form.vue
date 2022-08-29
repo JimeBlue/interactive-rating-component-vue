@@ -1,11 +1,13 @@
 vbase
 <template>
   <!-- "border-2 border-green-500 -->
-  <section class="bg-[#252D37] py-7 w-10/12 m-auto rounded-3xl font-overpass">
+  <section
+    class="bg-[#252D37] py-7 w-10/12 chico:w-10/12 medio:w-10/12 sm:max-w-max md:max-w-xl m-auto rounded-3xl font-overpass"
+  >
     <div class="m-auto w-11/12">
       <header>
         <span
-          class="bg-[#2D3743] w-10 h-10 rounded-full inline-flex justify-center items-center"
+          class="bg-[#2D3743] w-10 h-10 rounded-full inline-flex justify-center items-center mb-4"
         >
           <img
             src="../assets/images/icon-star.svg"
