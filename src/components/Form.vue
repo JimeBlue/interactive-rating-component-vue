@@ -1,6 +1,6 @@
 vbase
 <template>
-  <!-- "border-2 border-green-500 -->
+  <!-- border-2 border-green-500 -->
   <section
     class="bg-[#252D37] py-7 w-10/12 chico:w-10/12 medio:w-10/12 sm:max-w-max md:max-w-xl m-auto rounded-3xl font-overpass"
   >
