@@ -28,7 +28,6 @@ export default {
   methods: {
     showThankYou() {
       this.show = !this.show;
-      console.log(show);
     },
   },
 };

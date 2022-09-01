@@ -105,7 +105,6 @@ vbase
           </ul>
 
           <button
-            type="submit"
             class="border-1 rounded-3xl cursor-pointer text-base font-bold tracking-wider p-3 uppercase w-full bg-[#fb7413] text-white mb-4 hover:bg-white hover:text-[#fb7413]"
           >
             Submit
@@ -125,7 +124,6 @@ export default {
   },
   methods: {
     handleSubmit() {
-      console.log("submitting");
       this.$emit("open");
     },
   },
