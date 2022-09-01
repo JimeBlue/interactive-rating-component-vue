@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <!-- <Form></Form> -->
-    <ThankYou></ThankYou>
+    <div v-if="!show">
+      <Form @open="showThankYou"></Form>
+    </div>
+    <div v-if="show">
+      <ThankYou> </ThankYou>
+    </div>
   </div>
 </template>
 
@@ -15,6 +19,17 @@ export default {
   components: {
     Form,
     ThankYou,
+  },
+  data() {
+    return {
+      show: false,
+    };
+  },
+  methods: {
+    showThankYou() {
+      this.show = !this.show;
+      console.log(show);
+    },
   },
 };
 </script>
