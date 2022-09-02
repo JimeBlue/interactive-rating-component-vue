@@ -1,16 +1,13 @@
 <template>
   <div id="app">
-    <!--  v-if="!show" -->
-    <div>
+    <div v-if="!show">
       <!-- 2) listen to showRating comming from Form and call fucntion called showRating -->
       <Form @open="showThankYou" @showRating="showRating"></Form>
-      <p class="text-white">The rating is: {{ this.rating }}</p>
     </div>
-    <!-- <div v-if="show">
-     
-    </div> -->
-    <!-- 4) Pass rating to ThankYou -->
-    <ThankYou :rating="rating"> </ThankYou>
+    <div v-if="show">
+      <!-- 4) Pass rating to ThankYou -->
+      <ThankYou :rating="rating"> </ThankYou>
+    </div>
   </div>
 </template>
 
