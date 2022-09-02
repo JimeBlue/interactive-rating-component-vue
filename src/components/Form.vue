@@ -103,6 +103,7 @@ vbase
               >
             </li>
           </ul>
+          <p class="text-white">selected radio: {{ this.picked }}</p>
 
           <button
             class="border-1 rounded-3xl cursor-pointer text-base font-bold tracking-wider p-3 uppercase w-full bg-[#fb7413] text-white mb-4 hover:bg-white hover:text-[#fb7413]"
@@ -119,12 +120,14 @@ vbase
 export default {
   data() {
     return {
-      picked: "",
+      picked: 0,
     };
   },
   methods: {
     handleSubmit() {
-      this.$emit("open");
+      // this.$emit('open');
+      // 1) emiting picked to App
+      this.$emit('showRating', this.picked);
     },
   },
 };
