@@ -12,9 +12,10 @@
             alt="thank you"
           />
         </div>
+        <!-- 6) Output rating -->
         <span
           class="py-2 px-3 my-7 bg-[#2D3743] text-[#fb7413] rounded-3xl whitespace-nowrap inline-block"
-          >You selected {{ picked }} out of 5</span
+          >You selected {{ rating }} out of 5</span
         >
       </header>
       <!-- card body -->
@@ -31,7 +32,9 @@
 
 <script>
 export default {
-  setup() {
+  // 5) accept rating from App
+  props: ['rating'],
+  data() {
     return {};
   },
 };

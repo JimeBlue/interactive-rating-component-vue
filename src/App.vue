@@ -7,8 +7,10 @@
       <p class="text-white">The rating is: {{ this.rating }}</p>
     </div>
     <!-- <div v-if="show">
-      <ThankYou> </ThankYou>
+     
     </div> -->
+    <!-- 4) Pass rating to ThankYou -->
+    <ThankYou :rating="rating"> </ThankYou>
   </div>
 </template>
 
@@ -33,6 +35,7 @@ export default {
     showThankYou() {
       this.show = !this.show;
     },
+    // 3) set rating property defines here to property picked comming from Form
     showRating(picked) {
       this.rating = picked;
       console.log('picked');
