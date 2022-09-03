@@ -124,8 +124,16 @@ import EventBus from "../eventBus";
 export default {
   data() {
     return {
-      picked: "",
+      picked: 0,
     };
+  },
+
+  methods: {
+    handleSubmit() {
+      this.$emit("open");
+      // 1) emiting picked to App
+      this.$emit("showRating", this.picked);
+    },
   },
 };
 </script>

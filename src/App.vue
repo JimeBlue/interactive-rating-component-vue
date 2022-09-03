@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div v-if="!show">
-      <Form @open="showThankYou"></Form>
+      <!-- 2) listen to showRating comming from Form and call fucntion called showRating -->
+      <Form @open="showThankYou" @showRating="showRating"></Form>
     </div>
     <div v-if="show">
-      <ThankYou> </ThankYou>
+      <!-- 4) Pass rating to ThankYou -->
+      <ThankYou :rating="rating"> </ThankYou>
     </div>
   </div>
 </template>
@@ -23,7 +25,19 @@ export default {
   data() {
     return {
       show: false,
+      rating: "",
     };
+  },
+
+  methods: {
+    showThankYou() {
+      this.show = !this.show;
+    },
+    // 3) set rating property defines here to property picked comming from Form
+    showRating(picked) {
+      this.rating = picked;
+      console.log("picked");
+    },
   },
 };
 </script>
