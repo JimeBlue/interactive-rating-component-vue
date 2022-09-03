@@ -25,11 +25,6 @@ export default {
       show: false,
     };
   },
-  methods: {
-    showThankYou() {
-      this.show = !this.show;
-    },
-  },
 };
 </script>
 

@@ -14,7 +14,7 @@
         </div>
         <span
           class="py-2 px-3 my-7 bg-[#2D3743] text-[#fb7413] rounded-3xl whitespace-nowrap inline-block"
-          >You selected {{ picked }} out of 5</span
+          >You selected out of 5</span
         >
       </header>
       <!-- card body -->
@@ -30,9 +30,17 @@
 </template>
 
 <script>
+// Import the event bus inside event-bus.js
+import EventBus from "../eventBus";
 export default {
   setup() {
-    return {};
+    return {
+      data() {
+        return {
+          rating: 0,
+        };
+      },
+    };
   },
 };
 </script>

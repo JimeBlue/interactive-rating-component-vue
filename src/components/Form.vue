@@ -29,11 +29,12 @@ vbase
             <li>
               <input
                 type="radio"
-                value="One"
+                value="1"
                 name="rating"
                 id="1"
                 v-model="picked"
                 class="hover:bg-[#fb7413] hidden"
+                @click=""
               />
               <!-- /* Style the label to give it the appearance of a button */ -->
               <label
@@ -45,7 +46,7 @@ vbase
             <li>
               <input
                 type="radio"
-                value="Two"
+                value="2"
                 name="rating"
                 id="2"
                 v-model="picked"
@@ -60,7 +61,7 @@ vbase
             <li>
               <input
                 type="radio"
-                value="Three"
+                value="3"
                 name="rating"
                 id="3"
                 v-model="picked"
@@ -75,7 +76,7 @@ vbase
             <li>
               <input
                 type="radio"
-                value="Four"
+                value="4"
                 name="rating"
                 id="4"
                 v-model="picked"
@@ -90,10 +91,11 @@ vbase
             <li>
               <input
                 type="radio"
-                value="Five"
+                value="5"
                 name="rating"
                 id="5"
                 v-model="picked"
+                @click="sendRating"
                 class="hover:bg-[#fb7413] hidden"
               />
               <label
@@ -103,6 +105,7 @@ vbase
               >
             </li>
           </ul>
+          <p>Radio chosen {{ picked }}</p>
 
           <button
             class="border-1 rounded-3xl cursor-pointer text-base font-bold tracking-wider p-3 uppercase w-full bg-[#fb7413] text-white mb-4 hover:bg-white hover:text-[#fb7413]"
@@ -116,16 +119,13 @@ vbase
 </template>
 
 <script>
+// Import the event bus inside event-bus.js
+import EventBus from "../eventBus";
 export default {
   data() {
     return {
       picked: "",
     };
-  },
-  methods: {
-    handleSubmit() {
-      this.$emit("open");
-    },
   },
 };
 </script>
